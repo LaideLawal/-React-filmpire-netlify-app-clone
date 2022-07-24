@@ -1,38 +1,190 @@
-.App {
+.app_page1 {
+  margin: 0;
+  overflow: hidden;
+  height:100%;
+  
+}
+
+
+  #left {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    overflow-y: scroll; 
+   min-width: 20%;
+scrollbar-width: thin;
+  }
+
+  .page-logo > img {
+    width: 150px;
+    height: 60px;
+    margin:10px 18px;
+  }
+
+  @media (min-width: 768px){
+  #right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    scrollbar-width: thin;
+    right: 0;
+    overflow-y: scroll;
+    width: 80%;
+  }
+}
+
+#left {
+
+  text-align: center;
+  height:100%;
+}
+
+
+
+#right {
+  height:100%;
+ 
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h4{
+  padding: 10px 0; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.tool-card{
+  border: 2px solid black;
+  padding: 10px 10px;
+  margin: 10px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.category {
+  text-align: left;
+}
+
+.cat-list {
+  margin-left: 25px;
+  font-size: 18px;
+}
+
+.list:hover{
+  background-color: rgb(233, 231, 231);
+}
+.list {
+  padding: 5px;
+}
+
+.nav-login  {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.nav-login > h6  {
+  margin-right: 15px;
+}
+
+.form-control {
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  border-bottom: 1px solid rgb(203, 200, 200);
+  color: white;
+  
+}
+
+.form-control:focus{
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid white;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.wrapper  {
+  display: inline-flex;
+  flex-direction: row;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-control:hover  {
+  border:0;
+  border-bottom: 1px solid white;
 }
+
+.main-trending  {
+  width: 95%;
+  height: 65%;
+  background-color: black;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 20px;
+ 
+}
+
+.main-trending > img  {
+   background-blend-mode: revert-layer;
+   margin: 0 auto;
+}
+
+.movie  {
+ display:flex;
+ /* flex-direction: row; */
+ max-width: 85%;
+ margin: 0 auto;
+ justify-content: flex-start;
+flex-wrap: wrap;
+}
+
+.movie > img{
+  width: 180px;
+  height: 260px;
+  background-color: rgb(5, 48, 5);
+  border-radius: 18px;
+  margin: 20px;
+
+}
+.movie > img:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.movie > img:hover .overlay {
+	opacity: 1;
+}
+
+.overlay {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	transition: 0.5s ease;
+	opacity: 0;
+	bottom: 0;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+}
+.navbar {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.movie--title {
+  max-width: 160px;
+  
+}
+
+
+.navigation {
+  width: 20%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+/* .navigation > button {
+  border: none;
+  background: rgb(67, 67, 251) ;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+} */
