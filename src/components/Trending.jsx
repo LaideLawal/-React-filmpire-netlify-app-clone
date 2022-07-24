@@ -7,13 +7,18 @@ export default function Trending(){
    
 
     return (
-
+        <>
         <div className="main-trending">
             <img 
-            src="https://m.media-amazon.com/images/M/MV5BZjA3ZjhiODUtN2QxYy00MzlhLWFlYzYtZTg1ODQ2YjM0YjY3XkEyXkFqcGdeQXVyMzM3ODE4MzY@._V1_SX300.jpg" 
+            src="https://m.media-amazon.com/images/M/MV5BMTAwMDQwMjAwMDBeQTJeQWpwZ15BbWU3MDc4NTAyNTc@._V1_SX300.jpg"
             alt="trending"
             />
-            
+          
         </div>
+        <div className="text-content">
+            <h4>Working Title Films</h4>
+            <p>Working Title has been active in television production since the beginning of the 1990s. In February 2010, Working Title officially launched its television division as a joint venture with parent company NBCUniversal, itself owned by Comcast. Since then, they have produced content for both British and American television</p>
+            </div> 
+        </>
     )
 }
